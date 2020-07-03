@@ -87,6 +87,18 @@ numRuns = 6
 # Call the function scraptweets
 scraptweets(search_words, date_since, numTweets, numRuns)
 
+import nltk
+import string
+import pandas as pd
+import re
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+from collections import Counter
+tweets = pd.read_csv('E:/Nptel/aug15_sample.csv')
+
+#This is what the dataset looks like:
+tweets.head()
 
 top_N = 30
 stopwords = nltk.corpus.stopwords.words('english')
